@@ -4,39 +4,45 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   width: 75%;
   margin: auto;
 }
 
+.title-container {
+  width: 60%;
+  margin: auto;
+}
+
+
 div img {
   width: 100%;
 }
 
-.header .container h1 {
-  margin: 0;
+.no-list-style {
+  list-style: none;
 }
 
-.py-section {
-  padding-block: 40px;
+a{
+  text-decoration: none;
 }
 
-.padding-buttom {
-  padding-bottom: 40px;
+/*float***************************/
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear {
+  clear: both;
 }
 
-.section-paragraph {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: center;
-}
+/*float***************************/
 
-.cards-paragraph {
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 300;
-}
+
+/*text******************************/
 
 h1 {
   font-size: 65px;
@@ -55,27 +61,29 @@ h4 {
   font-size: 20px;
 }
 
+.section-paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  
+}
+
+.cards-paragraph {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
 .align-left {
   text-align: left;
 }
 
+.align-center{
+  text-align: center;
+}
+
 .line-height25 {
   line-height: 25px;
-}
-
-.no-margin {
-  margin: 0;
-}
-.no-padding {
-  padding-left: 0;
-}
-
-.no-list-style {
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
 }
 
 .text-white{
@@ -86,21 +94,99 @@ a{
 color: rgba(255, 255, 255, 0.538);
 }
 
+.grey-text{
+  color: rgba(219, 219, 219, 0.181);
+}
+
+/*text******************************/
+
+/*padding and margins***************/
+
+.padding-block40 {
+  padding-block: 40px;
+}
+
+.padding-buttom40 {
+  padding-bottom: 40px;
+}
+
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding-left: 0;
+}
+
 .no-margin-top{
   margin-top: 0;
 }
+
+.paddingtop60{
+ padding-top:60px ;
+}
+
+.marginbottom10{
+  margin-block: 0 10px;
+}
+
+.marginbottom30{
+  margin-bottom: 60px;
+}
+
+.margin-buttom {
+  margin-bottom: 20px;
+}
+
+
+/*padding and margins***************/
+
+/*backgroung colors****************/
+
+.bg-light {
+  background-color: white;
+}
+.bg-blue {
+  background-color: #145efd;
+}
+
+.bg-green {
+  background-color: rgb(0, 154, 101);
+}
+
+.bg-violet {
+  background-color: rgb(149, 18, 245);
+}
+
+.bg-grey {
+  background-color: rgb(250, 248, 248);
+}
+
+.bg-navyblue{
+  background-color: rgb(16, 23, 39);}
+
+
 /* general style*/
 
 /* section 1*/
 
-/*image******************************/
-
-.header .image {
-  width: 400px;
-  margin-top: 80px;
+.heading-text , .header-image{
+  display: inline-block;
 }
 
-.image-border {
+.header .container h1 {
+  margin: 0;
+}
+
+
+/*image******************************/
+
+.header-image {
+  width: 400px;
+  margin-top: 80px;
+  padding-left: 50px;
+}
+
+.border15 {
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -121,7 +207,7 @@ color: rgba(255, 255, 255, 0.538);
 
 /*button***************************/
 
-.header button {
+.header-buttons button {
   padding: 20px 30px;
   border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -134,45 +220,23 @@ color: rgba(255, 255, 255, 0.538);
 
 .header .btn-left {
   background-color: black;
-  color: white;
   margin-right: 10px;
 }
 
 .header .btn-right {
-  background-color: white;
-  border: 1px rgb(225, 225, 225) solid;
+  border: 1px rgb(176, 175, 175) solid;
 }
 
 /*button***************************/
-
-/*float***************************/
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
-.clear {
-  clear: both;
-}
-
-/*float***************************/
 
 /* section 1*/
 
 /* section 2*/
 
-/*text******************************/
-.why-choose-us .container .title {
-  width: 70%;
-  margin: auto;
-}
-
 /*cards**************************/
 
 .card {
   width: 25%;
-  text-align: center;
   padding: 25px 35px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -181,15 +245,15 @@ color: rgba(255, 255, 255, 0.538);
   -o-border-radius: 15px;
 }
 
-.why-choose-us .card.card1 {
+.why-choose-us .card1 {
   background-color: rgb(244, 232, 255);
   padding: 35px;
 }
-.why-choose-us .card.card2 {
+.why-choose-us .card2 {
   background-color: rgb(208, 250, 230);
   margin-inline: 40px;
 }
-.why-choose-us .card.card3 {
+.why-choose-us .card3 {
   background-color: rgb(219, 234, 255);
   padding: 35px;
 }
@@ -198,20 +262,7 @@ color: rgba(255, 255, 255, 0.538);
 
 /*shapes************************/
 
-.bg-light {
-  background-color: white;
-}
-.bg-blue {
-  background-color: #145efd;
-}
 
-.bg-green {
-  background-color: rgb(0, 154, 101);
-}
-
-.bg-violet {
-  background-color: rgb(149, 18, 245);
-}
 
 .square , .circle , .inner-square1 , .inner-square2 {
   width: 30px;
@@ -273,9 +324,6 @@ color: rgba(255, 255, 255, 0.538);
 
 /*text************************/
 
-.more-than-gym-section .text h3 {
-  margin-top: 0;
-}
 
 .more-than-gym-section h4 {
   font-weight: 500;
@@ -283,19 +331,9 @@ color: rgba(255, 255, 255, 0.538);
   margin-bottom: 10px;
 }
 
-.more-than-gym-section p {
-  margin: 0;
-}
 
 /*text************************/
 
-/*features********************/
-
-.more-than-gym-section .features {
-  margin-bottom: 20px;
-}
-
-/*features*********************/
 
 /*vertical line****************/
 
@@ -318,9 +356,7 @@ color: rgba(255, 255, 255, 0.538);
 
 /* section 4*/
 
-.bg-grey {
-  background-color: rgb(250, 248, 248);
-}
+
 /*text************************/
 
 .what-our-member-section .title {
@@ -329,9 +365,6 @@ color: rgba(255, 255, 255, 0.538);
   margin: auto;
 }
 
-.what-our-member-section .card .customer-info {
-  text-align: left;
-}
 
 /*text************************/
 
@@ -408,7 +441,6 @@ ul {
 }
 
 .what-our-member-section .gym-info-section .container {
-  background-color: rgb(241, 244, 249);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -428,7 +460,6 @@ ul {
 .form {
   width: 75%;
   margin: auto;
-  background-color:rgb(250, 248, 248) ;
   border-radius: 10px;
   padding-top: 50px;
   -webkit-border-radius: 10px;
@@ -501,6 +532,7 @@ padding: 20px;
   -o-border-radius:10px ;
   border: 1px solid rgb(175, 175, 175);
 }
+
 option{
   font-size: 18px;
   
@@ -541,31 +573,14 @@ color: gray;
 
 /* section 7*/
 
-
-
 .footer-descr{
   width: 50%;
   padding-left: 10px;
  
 }
 
-.paddingtop60{
- padding-top:60px ;
-}
-
-.bg-navyblue{
-  background-color: rgb(16, 23, 39);}
-
 .quick-links{
   margin-left: 20px;
-}
-
-.marginbottom10{
-  margin-block: 0 10px;
-}
-
-.marginbottom30{
-  margin-bottom: 60px;
 }
 
 .contact-info{
@@ -586,24 +601,8 @@ color: gray;
   padding-block: 20px 10px ;
 }
 
-.grey-text{
-  color: rgba(219, 219, 219, 0.181);
-}
-
 .policy-links{
   margin-top: 10px;
 }
 
 
-.test1 {
-  background-color: blue;
-}
-.test2 {
-  background-color: red;
-}
-.test3 {
-  background-color: green;
-}
-.test4 {
-  background-color: yellow;
-}
